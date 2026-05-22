@@ -1,10 +1,12 @@
 // ==UserScript==
 // @name         su amq
-// @namespace    lol
-// @version      0.6
+// @namespace    https://github.com/Aryssiel/amq-scripts
+// @version      0.6.0
 // @description  Button to create a lobby right away with preselected names and password..
 // @author       ary ft. chatgpt
 // @match        https://*.animemusicquiz.com/*
+// @downloadURL  https://raw.githubusercontent.com/Aryssiel/amq-scripts/main/su-amq.user.js
+// @updateURL    https://raw.githubusercontent.com/Aryssiel/amq-scripts/main/su-amq.user.js
 // @grant        none
 // ==/UserScript==
 'use strict';
