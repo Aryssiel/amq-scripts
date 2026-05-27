@@ -1,18 +1,17 @@
 // ==UserScript==
 // @name         su amq
 // @namespace    https://github.com/Aryssiel/amq-scripts
-// @version      0.6.0
+// @version      0.6.1
 // @description  Button to create a lobby right away with preselected names and password..
-// @author       ary ft. chatgpt
+// @author       ary ft. claudio
 // @match        https://*.animemusicquiz.com/*
 // @downloadURL  https://raw.githubusercontent.com/Aryssiel/amq-scripts/main/su-amq.user.js
 // @updateURL    https://raw.githubusercontent.com/Aryssiel/amq-scripts/main/su-amq.user.js
-// @grant        none
+// @grant        GM_addStyle
 // ==/UserScript==
 'use strict';
-let names = ["sharakuse","yippe","nicolasbruna","jafeto","jaimeme","metak weko"]
+let names = ["borren chanting","radio","jafeto porfavor vuelve a casa","jaimeme","metak weko"]
 let hostListner = null;
-let isTeams = false;
 let communityMode = false;
 let roomName = "test"
 let password = "123";
@@ -290,11 +289,6 @@ var button = document.createElement("div");
 button.className = "button floatingContainer mainMenuButton";
 button.id = "customButton";
 button.innerHTML = "<h1>Su amq</h1>";
-//button.style.padding = "10px";
-//button.style.marginLeft = "15%";
-//button.style.display = "flex";
-//button.style.color = "white";
-//button.style.cursor = "pointer";
 
 // Add a click event listener to the button
 button.addEventListener("click", handleClick);
@@ -317,3 +311,37 @@ if (optionsContainer) {
         optionsList.insertBefore(listItem, optionsList.firstChild);
     }
 }
+
+// Extra code cuz egerod's suggestion box is too fucking small
+GM_addStyle(`
+    #lnSettingSongPoolListSuggestContainer {
+        max-height: 450px !important;
+        height: auto !important;
+    }
+
+    #lnSettingSongPoolListSuggestEntryContainer {
+        max-height: 450px !important;
+        height: auto !important;
+    }
+
+    #lnSettingSongPoolListSelectorEntryContainer {
+        max-height: 450px !important;
+        min-height: auto !important;
+    }
+
+    .lnSettingSongPoolListSelectorEntry {
+        padding: 12px 15px !important;
+        display: flex !important;
+        align-items: center !important;
+    }
+
+    .lnSettingSongPoolListSelectorEntryListName div {
+        font-size: 20px !important;
+        font-weight: 500 !important;
+    }
+
+    .lnSettingSongPoolListDropdownContainer {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+`);
