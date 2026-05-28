@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         su amq
 // @namespace    https://github.com/Aryssiel/amq-scripts
-// @version      0.6.1
+// @version      0.6.2
 // @description  Button to create a lobby right away with preselected names and password..
 // @author       ary ft. claudio
 // @match        https://*.animemusicquiz.com/*
@@ -38,7 +38,7 @@ let settings = {
     "privateRoom": true,
     "password": password,
     "roomSize": 8,
-    "numberOfSongs": 100,
+    "numberOfSongs": 35,
     "teamSize": 8,
     "modifiers": {
         "skipGuessing": true,
@@ -56,7 +56,7 @@ let settings = {
         "advancedValue": {
             "watched": 0,
             "unwatched": 0,
-            "random": 100
+            "random": 35
         }
     },
     "watchedDistribution": 1,
@@ -70,7 +70,7 @@ let settings = {
             "openings": 0,
             "endings": 0,
             "inserts": 0,
-            "random": 100
+            "random": 35
         }
     },
     "openingCategories": {
