@@ -1,17 +1,17 @@
 // ==UserScript==
 // @name         su amq
 // @namespace    https://github.com/Aryssiel/amq-scripts
-// @version      0.6.3
+// @version      0.6.4
 // @description  Button to create a lobby right away with preselected names and password..
 // @author       ary ft. claudio
 // @match        https://*.animemusicquiz.com/*
 // @downloadURL  https://raw.githubusercontent.com/Aryssiel/amq-scripts/main/su-amq.user.js
 // @updateURL    https://raw.githubusercontent.com/Aryssiel/amq-scripts/main/su-amq.user.js
+// @require      https://raw.githubusercontent.com/TheJoseph98/AMQ-Scripts/master/common/amqScriptInfo.js
 // @grant        GM_addStyle
 // ==/UserScript==
 'use strict';
 let names = ["borren chanting","radio","jafeto porfavor vuelve a casa","jaimeme","metak weko","su sala", "su amq", "el metak se quejo que sale siempre lo mismo", "metak weko reborn"]
-]
 let hostListner = null;
 let communityMode = false;
 let roomName = "test"
@@ -313,6 +313,14 @@ if (optionsContainer) {
         optionsList.insertBefore(listItem, optionsList.firstChild);
     }
 }
+
+AMQ_addScriptData({
+    name: "su amq",
+    author: "Aryssiel",
+    version: GM_info.script.version,
+    link: "https://github.com/Aryssiel/amq-scripts/blob/main/su-amq.user.js",
+    description: `<p>su sala, suggestion box for list thing too. thanks vibe coding</p>`
+    });
 
 // Extra code cuz egerod's suggestion box is too fucking small
 GM_addStyle(`
