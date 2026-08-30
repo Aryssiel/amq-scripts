@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         su amq
 // @namespace    https://github.com/Aryssiel/amq-scripts
-// @version      0.6.4
+// @version      0.6.5
 // @description  Button to create a lobby right away with preselected names and password..
 // @author       ary ft. claudio
 // @match        https://*.animemusicquiz.com/*
@@ -11,7 +11,7 @@
 // @grant        GM_addStyle
 // ==/UserScript==
 'use strict';
-let names = ["borren chanting","radio","jafeto porfavor vuelve a casa","jaimeme","metak weko","su sala", "su amq", "el metak se quejo que sale siempre lo mismo", "metak weko reborn"]
+let names = ["borren chanting","radio","sabetin paga la pension","jafeto porfavor vuelve a casa","jaimeme","metak weko","su sala", "su amq", "el metak se quejo que sale siempre lo mismo", "metak weko reborn","pekoweko"]
 let hostListner = null;
 let communityMode = false;
 let roomName = "test"
